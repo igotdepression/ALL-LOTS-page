@@ -1,44 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Collections - LOT London</title>
     <link rel="stylesheet" href="styles.css">
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const priceMinInput = document.getElementById('price-min-input');
-            const priceMaxInput = document.getElementById('price-max-input');
-            const priceMinRange = document.getElementById('price-min');
-            const priceMaxRange = document.getElementById('price-max');
-        
-            priceMinInput.addEventListener('input', function() {
-                const value = Math.min(parseInt(priceMinInput.value), parseInt(priceMaxInput.value) - 1);
-                priceMinInput.value = value;
-                priceMinRange.value = value;
-            });
-        
-            priceMaxInput.addEventListener('input', function() {
-                const value = Math.max(parseInt(priceMaxInput.value), parseInt(priceMinInput.value) + 1);
-                priceMaxInput.value = value;
-                priceMaxRange.value = value;
-            });
-        
-            priceMinRange.addEventListener('input', function() {
-                const value = Math.min(parseInt(priceMinRange.value), parseInt(priceMaxRange.value) - 1);
-                priceMinRange.value = value;
-                priceMinInput.value = value;
-            });
-        
-            priceMaxRange.addEventListener('input', function() {
-                const value = Math.max(parseInt(priceMaxRange.value), parseInt(priceMinRange.value) + 1);
-                priceMaxRange.value = value;
-                priceMaxInput.value = value;
-            });
-        });
+    <script src="script.js">
+
     </script>
-        
+
 </head>
 
 <body>
@@ -46,8 +18,8 @@
     <header class="header">
         <div class="header__container">
             <div class="header__left">
-                <a href="https://tak1st.github.io/LOT/" class="header__logo"><img src="./assets/home.png" alt="Home" class="header__icon"
-                        id="homepage"></a>
+                <a href="https://tak1st.github.io/LOT/" class="header__logo"><img src="./assets/home.png" alt="Home"
+                        class="header__icon" id="homepage"></a>
                 <div class="header__nav">
                     <div class="dropdown header__dropdown">
                         <button class="header__dropbtn">SHOP&#x25BC;</button>
@@ -117,7 +89,7 @@
 
     <main>
         <div class="breadcrumb">
-            <a href="#">Home</a> / <a href="#">Collections</a> / <span>All Lots</span>
+            <a href="https://tak1st.github.io/LOT/">Home</a> / <a href="#">Collections</a> / <span>All Lots</span>
         </div>
 
         <h2 class="main-title">ALL LOTS</h2>
@@ -137,9 +109,11 @@
                     <div class="filter-content">
                         <label><input type="checkbox"> &Tradition <span class="count">(1)</span></label>
                         <label><input type="checkbox"> /// Not Listed /// <span class="count">(2)</span></label>
-                        <label><input type="checkbox"> Afair For Home/// Not Listed /// <span class="count">(1)</span></label>
+                        <label><input type="checkbox"> Afair For Home/// Not Listed /// <span
+                                class="count">(1)</span></label>
                         <label><input type="checkbox"> Aldgate Home <span class="count">(1)</span></label>
-                        <label><input type="checkbox"> Alexander And James Vivenne Maxi <span class="count">(1)</span></label>
+                        <label><input type="checkbox"> Alexander And James Vivenne Maxi <span
+                                class="count">(1)</span></label>
                         <label><input type="checkbox"> Alvaro <span class="count">(1)</span></label>
                         <label><input type="checkbox"> Andrew Martin <span class="count">(10)</span></label>
                         <label><input type="checkbox"> Angelo Cappellini <span class="count">(1)</span></label>
@@ -200,22 +174,38 @@
                 <div class="filter-section">
                     <h3>Colour</h3>
                     <div class="filter-content">
-                        <div class="colour-option"><div class="colour-swatch beige"></div> Beige</div>
-                        <div class="colour-option"><div class="colour-swatch black"></div> Black</div>
-                        <div class="colour-option"><div class="colour-swatch blue"></div> Blue</div>
-                        <div class="colour-option"><div class="colour-swatch brown"></div> Brown</div>
-                        <div class="colour-option"><div class="colour-swatch burgundy"></div> Burgundy</div>
-                        <div class="colour-option"><div class="colour-swatch cream"></div> Cream</div>
-                        <div class="colour-option"><div class="colour-swatch green"></div> Green</div>
-                        <div class="colour-option"><div class="colour-swatch grey"></div> Grey</div>
+                        <div class="colour-option">
+                            <div class="colour-swatch beige"></div> Beige
+                        </div>
+                        <div class="colour-option">
+                            <div class="colour-swatch black"></div> Black
+                        </div>
+                        <div class="colour-option">
+                            <div class="colour-swatch blue"></div> Blue
+                        </div>
+                        <div class="colour-option">
+                            <div class="colour-swatch brown"></div> Brown
+                        </div>
+                        <div class="colour-option">
+                            <div class="colour-swatch burgundy"></div> Burgundy
+                        </div>
+                        <div class="colour-option">
+                            <div class="colour-swatch cream"></div> Cream
+                        </div>
+                        <div class="colour-option">
+                            <div class="colour-swatch green"></div> Green
+                        </div>
+                        <div class="colour-option">
+                            <div class="colour-swatch grey"></div> Grey
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="filter-section">
                     <h3>Price</h3>
                     <div class="filter-content">
                         <div class="price-range">
-                            <input type="number" id="price-min-input" value="50" min="0" max="30000"> - 
+                            <input type="number" id="price-min-input" value="50" min="0" max="30000"> -
                             <input type="number" id="price-max-input" value="30000" min="0" max="30000">
                         </div>
                         <div class="price-slider">
@@ -227,7 +217,7 @@
                             <span>£30,000.00</span>
                         </div>
                     </div>
-                </div>                
+                </div>
             </aside>
 
             <section class="product-list">
@@ -331,7 +321,7 @@
         </div>
 
     </main>
-    
+
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -384,4 +374,5 @@
     </footer>
 
 </body>
+
 </html>
